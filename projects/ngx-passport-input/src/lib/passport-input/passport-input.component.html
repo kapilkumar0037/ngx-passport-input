@@ -1,0 +1,12 @@
+<div class="ipv_passport">
+    <div class="ipv_country_part">
+        <lib-country-list [blockedCountryCodes]="blockedCountryCodes()"
+            [allowedCountryCodes]="allowedCountryCodes()" [selectedCountryConfig]="selectedCountryConfig()"
+            [countryListConfig]="countryListConfig()" [selectedCountryCode]="selectedCountryCode()"
+            (onCountryChange)="onCountryChange($event)" />
+    </div>
+    <input class="ipv_passport_input" name="passport" maxlength="20" [(ngModel)]="passportInput" #passport="ngModel"
+        (ngModelChange)="onPassportNumberChange(!passport.invalid)" [pattern]="selectedCountry()?.passportRegex" 
+        type="text" autocomplete="off"
+        [placeholder]="placeholder()" />
+</div>

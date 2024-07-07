@@ -1,0 +1,32 @@
+@import './dropdown';
+
+.ipv_passport {
+    .ipv_country_part {
+        max-width: 100px;
+        position: absolute;
+        width: max-content;
+    }
+
+    input.ipv_passport_input {
+        display: inline-block;
+        vertical-align: top;
+        box-sizing: border-box;
+        margin: 0;
+        font-family: inherit;
+        font-size: 100%;
+        color: inherit;
+        min-height: 40px;
+        padding: 0 15px 0 90px;
+        line-height: 40px;
+        width: 100%;
+        background: #fff;
+        white-space: nowrap;
+        border: 1px solid #a6a6a6;
+        border-radius: 5px;       
+        outline: none;
+
+        &::placeholder{
+            opacity: 0.5;
+        }
+    }
+}

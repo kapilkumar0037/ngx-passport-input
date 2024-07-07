@@ -1,0 +1,154 @@
+.ipv_hide {
+  visibility: hidden;
+}
+
+.ipv_dropdown {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.ipv_selected-item {
+  position: relative;
+  padding: 0 8px 0 8px;
+  height: 39px;
+  line-height: 39px;
+  background: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin: 1px 0 0 2px;
+  border-radius: 5px;
+}
+
+.ipv_arrow {
+  margin-left: auto;
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 5px solid #555;
+}
+
+.ipv_arrow--up {
+  border-top: none;
+  border-bottom: 5px solid #555;
+}
+
+.ipv_country-list {
+  position: absolute;
+  z-index: 2;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  border: 1px solid #ccc;
+  white-space: nowrap;
+  max-height: 201px;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+  min-width: max-content;
+}
+
+@media (max-width: 500px) {
+  .ipv_country-list {
+    white-space: normal;
+  }
+}
+
+.ipv_flag-box {
+  display: inline-block;
+  width: 20px;
+}
+
+.ipv_country {
+  display: flex;
+  align-items: center;
+  padding: 6px 10px;
+  outline: none;
+}
+
+.ipv_code-box {
+  padding: 2px 4px;
+  width: 30px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.ipv_country.ipv_highlight {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+input.ipv_search_box {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: inherit;
+  font-size: 100%;
+  color: inherit;
+  border: none;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  z-index: 2;
+  background-color: rgb(255, 255, 255, 0.5);
+  min-height: 39px;
+  padding: 0 8px 0 8px;
+  line-height: 39px;
+  outline: 0;
+
+  &.filtered {
+    background-color: #ffffff;
+    margin: 1px 0 0 2px;
+  }
+}
+
+.ipv_dial-code {
+  color: #999;
+}
+
+.ipv_country:hover,
+.ipv_country:focus {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.ipv_flag-box,
+.ipv_country-name,
+.ipv_code-box,
+.ipv_dial-code {
+  margin-right: 0;
+  margin-left: 6px;
+}
+
+.ipv_dropdown {
+  right: auto;
+  left: 0;
+}
+
+.ipv_dropdown:hover {
+  cursor: pointer;
+}
+
+.ipv_dropdown:hover .ipv_selected-item {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.ipv_dropdown:hover .ipv_selected-item {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.ipv-mobile .ipv_country-list {
+  max-height: 100%;
+  width: 100%;
+}
+
+.ipv-mobile .ipv_country {
+  padding: 10px 10px;
+  line-height: 1.5em;
+}
+
+@import './flags';

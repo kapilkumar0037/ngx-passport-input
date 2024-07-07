@@ -6,7 +6,12 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "build:sass": "sass projects/ngx-passport-input/styles/passport-style.scss projects/ngx-passport-input/assets/styles.css",
+    "build:prod": "npm run build:sass && ng build ngx-passport-input -c=production",
+    "publish": "npm publish dist/ngx-passport",
+    "prettier": "npx prettier --write .",
+    "lint": "ng lint"
   },
   "private": true,
   "dependencies": {
@@ -34,6 +39,8 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
     "ng-packagr": "^18.0.0",
+    "prettier": "^3.3.2",
+    "sass": "^1.77.6",
     "typescript": "~5.4.2"
   }
 }
