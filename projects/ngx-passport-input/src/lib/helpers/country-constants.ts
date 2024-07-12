@@ -4,12 +4,16 @@ export const COUNTRIES_LIST: ICountryWithPassportRegex[] = [
     {
         name: "Afghanistan (‫افغانستان‬‎)",
         code: "AF",
-        dialling_code: "+93"
+        dialling_code: "+93",
+        passportRegex: /^[A-Z]{3}\d{6}$/,
+        placeholder: "KAB123456"
     },
     {
         name: "Albania (Shqipëri)",
         code: "AL",
-        dialling_code: "+355"
+        dialling_code: "+355",
+        passportRegex: /^[A-Z]\d{7}$/,
+        placeholder: "A1234567"
     },
     {
         name: "Algeria (‫الجزائر‬‎)",
@@ -19,29 +23,32 @@ export const COUNTRIES_LIST: ICountryWithPassportRegex[] = [
         placeholder: "123456789"
     },
     {
-        name: "American Samoa",
-        code: "AS",
-        dialling_code: "+1"
-    },
-    {
         name: "Andorra",
         code: "AD",
-        dialling_code: "+376"
+        dialling_code: "+376",
+        passportRegex: /^O\d{7}$/,
+        placeholder: "O1234567"
     },
     {
         name: "Angola",
         code: "AO",
-        dialling_code: "+244"
+        dialling_code: "+244",
+        passportRegex: /^N\d{7}$/,
+        placeholder: "N7654321"
     },
     {
         name: "Anguilla",
         code: "AI",
-        dialling_code: "+43"
+        dialling_code: "+43",
+        passportRegex: /^\d{9}$/,
+        placeholder:'123456789'
     },
     {
         name: "Antigua and Barbuda",
         code: "AG",
-        dialling_code: "+1"
+        dialling_code: "+1",
+        passportRegex: /^[A-Z0-9]{9}$/,
+        placeholder: "A12345678"
     },
     {
         name: "Argentina",
@@ -487,7 +494,8 @@ export const COUNTRIES_LIST: ICountryWithPassportRegex[] = [
         name: "India (भारत)",
         code: "IN",
         dialling_code: "+91",
-        passportRegex: /^[A-Z]{1}-?\\d{7}$/
+        passportRegex: /^[A-Z]{1}-?\\d{7}$/,
+        placeholder: "A2096457"
     },
     {
         name: "Indonesia",
@@ -1157,13 +1165,15 @@ export const COUNTRIES_LIST: ICountryWithPassportRegex[] = [
         name: "United Kingdom of Great Britain and Northern Ireland",
         code: "GB",
         dialling_code: "+44",
-        passportRegex: /^\\d{9}$/
+        passportRegex: /^\\d{9}$/,
+        placeholder: '987654321'
     },
     {
         name: "United States of America",
         code: "US",
         dialling_code: "+1",
-        passportRegex: /^\\d{9}$/
+        passportRegex: /^\\d{9}$/,
+        placeholder: '987654321'
     },
     {
         name: "Uruguay",
