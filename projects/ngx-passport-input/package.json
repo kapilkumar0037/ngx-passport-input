@@ -1,12 +1,24 @@
 {
-  "name": "ngx-passport",
-  "version": "0.0.1",
+  "name": "ngx-passport-input",
+  "version": "1.0.0",
+  "description": "Ngx-passport-input provides an input field component for passport number and have a countries dropdown list with flags associated with input field as a prefix. User can select a specific country and passport validation for that country will have to be satisfied. The country list can be customised based on configuration options to fit various needs and use cases.",
   "peerDependencies": {
-    "@angular/common": "^18.0.0",
-    "@angular/core": "^18.0.0"
+    "@angular/common": "^18.0.4",
+    "@angular/core": "^18.0.4"
   },
   "dependencies": {
     "tslib": "^2.3.0"
   },
+  "author": "Kapil Kumar <kapilkumar0037@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kapilkumar0037/ngx-passport-input.git"
+  },
+  "keywords": [
+    "countries dropdown",
+    "angular"
+  ],
+  "homepage": "https://github.com/kapilkumar0037/ngx-passport-input.git#readme",
   "sideEffects": false
 }

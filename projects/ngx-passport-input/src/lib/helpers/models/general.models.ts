@@ -15,7 +15,12 @@ export interface IConfig {
 export interface IValidatedValue {
     value: string;
     isValid: boolean;
+    countryCode: string;
 }
+ export interface IDefaultRegex {
+    regex: any;
+    placeholder: string;
+ }
 
 export interface ICountryConfig {
     blockedCountryCodes?: string[];

@@ -1,4 +1,4 @@
 <div>
   <div>Passport field with flags and country wise validation</div><br>
-  <lib-passport-input [countryConfig]="countryConfig" (passportOutput)="passportOutput($event)"/>
+  <lib-passport-input [countryConfig]="countryConfig" [regexForUnsupportedCountries]="regexForUnsupportedCountries" (passportOutput)="passportOutput($event)"/>
 </div>
