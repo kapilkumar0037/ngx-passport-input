@@ -21,6 +21,8 @@
   display: flex;
   align-items: center;
   margin: 1px 0 0 2px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 .ipv_arrow {
@@ -1528,7 +1530,7 @@ input.ipv_search_box.filtered {
   font-size: 100%;
   color: inherit;
   min-height: 40px;
-  padding: 0 15px 0 95px;
+  padding: 0 15px 0 91px;
   line-height: 40px;
   width: 100%;
   background: #fff;
@@ -1549,6 +1551,9 @@ input.ipv_search_box.filtered {
   border-color: #ea868f;
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgba(234, 134, 143, 0.5);
+}
+.ipv_passport input.ipv_passport_input.code-hidden {
+  padding-left: 60px;
 }
 
 /*# sourceMappingURL=styles.css.map */

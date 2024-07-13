@@ -8,5 +8,7 @@
     <input class="ipv_passport_input" [required]="isRequired()?? false" name="passport" maxlength="20" [(ngModel)]="passportInput" #passport="ngModel"
         (ngModelChange)="onPassportNumberChange(!passport.invalid)" (blur)="onPassportNumberChange(!passport.invalid)" [pattern]="selectedCountry()?.passportRegex" 
         type="text" autocomplete="off"
-        [placeholder]="placeholder()" [class.error]="passport.invalid && (passport.touched || passport.dirty)"/>
+        [placeholder]="placeholder()"
+         [class.error]="passport.invalid && (passport.touched || passport.dirty)"
+         [class.code-hidden]="selectedCountryConfig().hideCode"/>
 </div>

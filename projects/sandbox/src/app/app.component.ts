@@ -14,6 +14,7 @@ export class AppComponent {
   readonly title = 'sandbox';
   countryConfig: ICountryConfig = {
     selectedCountryCode: '',
+    selectedCountryConfig: {hideCode: true}
   }
   
   passportConfig: IPassportConfig = {
