@@ -16,17 +16,29 @@
         font-size: 100%;
         color: inherit;
         min-height: 40px;
-        padding: 0 15px 0 90px;
+        padding: 0 15px 0 95px;
         line-height: 40px;
         width: 100%;
         background: #fff;
         white-space: nowrap;
         border: 1px solid #a6a6a6;
-        border-radius: 5px;       
+        border-radius: 5px;
         outline: none;
 
-        &::placeholder{
+        &::placeholder {
             opacity: 0.5;
+        }
+
+        &:focus {
+            border-color: #86b7fe;
+            outline: 0;
+            box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+        }
+
+        &.error {
+            border-color: #ea868f;
+            outline: 0;
+            box-shadow: 0 0 0 0.25rem rgba(234, 134, 143, 0.5);
         }
     }
 }

@@ -29,3 +29,8 @@ export interface ICountryConfig {
     countryListConfig?: IConfig
     allowedCountryCodes?: string[];
 }
+
+export interface IPassportConfig {
+    isRequired?: boolean;
+    regexForUnsupportedCountries?: IDefaultRegex;
+}

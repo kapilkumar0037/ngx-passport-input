@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { ICountryConfig, PassportInputComponent } from '../../../ngx-passport-input/src/lib';
-import { IDefaultRegex } from '../../../ngx-passport-input/src/lib/helpers/models/general.models';
+import { IDefaultRegex, IPassportConfig } from '../../../ngx-passport-input/src/lib/helpers/models/general.models';
 
 @Component({
   selector: 'app-root',
@@ -15,8 +15,10 @@ export class AppComponent {
   countryConfig: ICountryConfig = {
     selectedCountryCode: '',
   }
-  regexForUnsupportedCountries: IDefaultRegex = {regex: /^[A-Z0-9]{12}$/, placeholder: 'A1234567B'};
-
+  
+  passportConfig: IPassportConfig = {
+    regexForUnsupportedCountries: {regex: /^[A-Z0-9]{12}$/, placeholder: 'A1234567B'}
+  }
   onCountryChange(country: any) {
     console.log(country);
   }
