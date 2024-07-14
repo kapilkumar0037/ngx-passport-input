@@ -3,6 +3,7 @@
 Ngx-passport-input provides an input field component for passport number and have a countries dropdown list with flags associated with input field as a prefix. User can select a specific country and passport validation for that country will have to be satisfied. The country list can be customised based on configuration options to fit various needs and use cases. 
 
 ## Demo
+Access all features <a href="https://kapilkumar0037.github.io/ngx-passport-input-demo/#/default">demo here</a>.
 
 ## Getting started
 
@@ -88,16 +89,17 @@ export interface IConfig {
  </tr>
 </tbody></table>
 
-## Passport validation configuration for non supported countries
+## Passport field configuration
 By default for non supported countries validation is there where user needs to enter at least 5 characters or number. This validation is configurable and you can pass your own regex to validate non supported countries.
-Component supports an input property  <b> regexForUnsupportedCountries</b> of type 
+Component supports an input property  <b> passportConfig</b> of type 
 ```
- export interface IDefaultRegex {
-    regex: any;
-    placeholder: string;
- }
+ export interface IPassportConfig {
+    isRequired?: boolean;
+    regexForUnsupportedCountries?: IDefaultRegex;
+}
 ```
-
+By default passport field is required, you can disable passing isRequired property as false.
+For unsupported countries option to set custom regex can be done using regexForUnsupportedCountries
 ## Output
 The below output will be returned when user will enter the passport number
 ```
